@@ -1,4 +1,4 @@
-const Colors = {
+const colors = {
   black: "#000000",
   night: "#333333",
   charcoal: "#474747",
@@ -12,4 +12,4 @@ const Colors = {
   ypsLight: "#7B92BF",
   cosmic: "#963D32",
 };
-export default Colors;
+export default colors;
