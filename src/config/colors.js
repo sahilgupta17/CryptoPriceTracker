@@ -11,5 +11,7 @@ const colors = {
   yps: "#637599",
   ypsLight: "#7B92BF",
   cosmic: "#963D32",
+  lossRed: "#ea3943",
+  profitGreen: "green",
 };
 export default colors;

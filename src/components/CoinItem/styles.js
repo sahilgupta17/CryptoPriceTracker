@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
   },
   title: {
     color: "white",
-    fontSize: 16,
+    fontSize: 14,
   },
   container: {
     flexDirection: "row",
@@ -32,14 +32,14 @@ const styles = StyleSheet.create({
   },
   graph: {
     color: "white",
-    fontSize: 16,
+    fontSize: 14,
   },
   priceButton: {
-    backgroundColor: "green",
+    backgroundColor: colors.profitGreen,
     borderRadius: 5,
     borderWidth: 1,
     padding: 10,
-    width: 100,
+    width: 115,
   },
 });
 
