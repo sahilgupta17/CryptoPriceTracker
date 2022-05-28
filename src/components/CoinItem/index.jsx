@@ -26,9 +26,9 @@ const CoinItem = () => {
         <Text style={styles.title}>ETH</Text>
       </View>
       <View style={styles.graph}>
-        <Text style={styles.price}>Graph to be placed</Text>
+        <Text style={styles.graph}>Graph to be placed</Text>
       </View>
-      <View style={styles.priceButton}>
+      <View>
         {/* <Text style={styles.price}>$2.3</Text>
          */}
         <TouchableOpacity
@@ -41,5 +41,9 @@ const CoinItem = () => {
     </View>
   );
 };
+
+// yps: "#637599",
+//   ypsLight: "#7B92BF",
+//   cosmic: "#963D32",
 
 export default CoinItem;

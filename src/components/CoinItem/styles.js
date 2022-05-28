@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import colors from "../../config/colors";
 
 const styles = StyleSheet.create({
   coinImage: {
@@ -15,26 +16,30 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
-    marginHorizontal: 10,
+    marginHorizontal: 5,
     marginTop: 20,
-    padding: 10,
+    padding: 15,
+    bottomborderWidth: StyleSheet.hairlineWidth,
+    borderBottomColor: "#282828",
   },
   leftColumn: {
     flexDirection: "row",
     alignItems: "center",
   },
   price: {
-    color: "white",
+    color: "black",
     fontSize: 16,
   },
   graph: {
     color: "white",
     fontSize: 16,
+    fontweight: "bold",
   },
   priceButton: {
-    color: "green",
+    backgroundColor: "green",
     borderRadius: 5,
     borderWidth: 1,
+    padding: 10,
   },
 });
 
