@@ -10,7 +10,6 @@ const styles = StyleSheet.create({
   title: {
     color: "white",
     fontSize: 16,
-    fontWeight: "bold",
   },
   container: {
     flexDirection: "row",
@@ -34,7 +33,6 @@ const styles = StyleSheet.create({
   graph: {
     color: "white",
     fontSize: 16,
-    fontWeight: "bold",
   },
   priceButton: {
     backgroundColor: "green",
