@@ -1,18 +1,14 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
+// import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import HomeScreen from "./src/screens/HomeScreen";
-import CoinItem from "./src/components/CoinItem";
 import colors from "./src/config/colors";
 
 export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar style="light" />
-      <CoinItem />
-      <CoinItem />
-      <CoinItem />
-      {/* <Text style={{ color: "white" }}>hey</Text> */}
-      {/* <HomeScreen /> */}
+      <HomeScreen />
     </View>
   );
 }
@@ -20,7 +16,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#121212",
+    // backgroundColor: "#121212",
+    backgroundColor: "black",
     paddingTop: 50,
     color: "white",
   },
