@@ -9,6 +9,8 @@ export default function App() {
     <View style={styles.container}>
       <StatusBar style="light" />
       <CoinItem />
+      <CoinItem />
+      <CoinItem />
       {/* <Text style={{ color: "white" }}>hey</Text> */}
       {/* <HomeScreen /> */}
     </View>

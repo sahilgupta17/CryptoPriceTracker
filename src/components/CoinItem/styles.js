@@ -15,7 +15,9 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
-    marginHorizontal: 20,
+    marginHorizontal: 10,
+    marginTop: 20,
+    padding: 10,
   },
   leftColumn: {
     flexDirection: "row",
@@ -28,6 +30,11 @@ const styles = StyleSheet.create({
   graph: {
     color: "white",
     fontSize: 16,
+  },
+  priceButton: {
+    color: "green",
+    borderRadius: 5,
+    borderWidth: 1,
   },
 });
 
