@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
   priceButton: {
-    backgroundColor: colors.profitGreen,
+    // backgroundColor: colors.profitGreen,
     borderRadius: 5,
     borderWidth: 1,
     padding: 10,
