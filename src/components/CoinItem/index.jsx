@@ -13,9 +13,20 @@ const onPriceButtonPress = () => {
   ]);
 };
 
+const onCoinItemPressed = () => {
+  Alert.alert("Alert Title", "My Alert Msg", [
+    {
+      text: "Cancel",
+      onPress: () => console.log("Cancel Pressed"),
+      style: "cancel",
+    },
+    { text: "COIN", onPress: () => console.log("Coin Pressed") },
+  ]);
+};
+
 const CoinItem = () => {
   return (
-    <View style={styles.container}>
+    <TouchableOpacity style={styles.container} onPress={onCoinItemPressed}>
       <View style={styles.leftColumn}>
         <Image
           source={{
@@ -29,21 +40,15 @@ const CoinItem = () => {
         <Text style={styles.graph}>Graph to be placed</Text>
       </View>
       <View>
-        {/* <Text style={styles.price}>$2.3</Text>
-         */}
         <TouchableOpacity
           onPress={onPriceButtonPress}
           style={styles.priceButton}
         >
-          <Text style={styles.price}>$2.3</Text>
+          <Text style={styles.priceText}>$200.38</Text>
         </TouchableOpacity>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
-
-// yps: "#637599",
-//   ypsLight: "#7B92BF",
-//   cosmic: "#963D32",
 
 export default CoinItem;

@@ -10,36 +10,38 @@ const styles = StyleSheet.create({
   title: {
     color: "white",
     fontSize: 16,
-    fontweight: "bold",
+    fontWeight: "bold",
   },
   container: {
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
     marginHorizontal: 5,
-    marginTop: 20,
+    marginTop: 10,
     padding: 15,
-    bottomborderWidth: StyleSheet.hairlineWidth,
+    borderBottomWidth: StyleSheet.hairlineWidth,
     borderBottomColor: "#282828",
   },
   leftColumn: {
     flexDirection: "row",
     alignItems: "center",
   },
-  price: {
+  priceText: {
     color: "black",
-    fontSize: 16,
+    fontSize: 14,
+    alignSelf: "center",
   },
   graph: {
     color: "white",
     fontSize: 16,
-    fontweight: "bold",
+    fontWeight: "bold",
   },
   priceButton: {
     backgroundColor: "green",
     borderRadius: 5,
     borderWidth: 1,
     padding: 10,
+    width: 100,
   },
 });
 
