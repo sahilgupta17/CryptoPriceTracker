@@ -7,9 +7,9 @@ import styles from "./styles";
 
 const CoinDetailHeader = (props) => {
   const [priceData, setpriceData] = useState(
-    `$ ${Coin.market_data.price_change_24h.toFixed(
-      2
-    )} (${Coin.market_data.price_change_percentage_24h.toFixed(2)}%)`
+    `$${Math.abs(Coin.market_data.price_change_24h.toFixed(2))} (${Math.abs(
+      Coin.market_data.price_change_percentage_24h.toFixed(2)
+    )}%)`
   );
 
   const caretName =
