@@ -16,7 +16,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "space-between",
     marginHorizontal: 5,
-    paddingHorizontal: 15,
     paddingVertical: 20,
     borderBottomWidth: StyleSheet.hairlineWidth,
     borderBottomColor: "#282828",
@@ -35,7 +34,6 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
   priceButton: {
-    // backgroundColor: colors.profitGreen,
     borderRadius: 5,
     borderWidth: 1,
     padding: 10,
