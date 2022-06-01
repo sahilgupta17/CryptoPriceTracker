@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 import styles from "./styles";
 import Coin from "../../../assets/data/crypto.json";
-import CoinDetailHeader from "../../components/CoinDetailHeader";
+import CoinDetailHeader from "./components/CoinDetailHeader";
 import colors from "../../config/colors";
 
 const CoinDetailsScreen = () => {
