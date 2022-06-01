@@ -16,14 +16,18 @@ const styles = StyleSheet.create({
     color: "white",
   },
   headerContainer: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
+    // flexDirection: "row",
+    // alignItems: "center",
+    // justifyContent: "space-between",
     padding: 20,
   },
   percentageChange: {
     color: "white",
     fontSize: 18,
+  },
+  priceChange: {
+    marginLeft: 5,
+    fontSize: 13,
   },
   percentagePriceChangeButton: {
     backgroundColor: colors.profitGreen,
@@ -33,6 +37,10 @@ const styles = StyleSheet.create({
     width: 100,
     alignItems: "center",
     justifyContent: "center",
+  },
+  priceChangeDisplay: {
+    flexDirection: "row",
+    alignItems: "center",
   },
 });
 
