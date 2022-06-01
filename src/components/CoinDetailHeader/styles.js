@@ -4,13 +4,13 @@ const styles = StyleSheet.create({
   navigation: {
     flexDirection: "row",
     justifyContent: "space-between",
+    alignItems: "center",
   },
   coinHeader: {
     flexDirection: "row",
-    alignItems: "center",
     color: "white",
   },
-  tinylogo: {
+  logo: {
     height: 20,
     width: 20,
     marginRight: 3,
