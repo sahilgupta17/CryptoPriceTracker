@@ -1,19 +1,36 @@
-import React from "react";
-import { Ionicons } from "@expo/vector-icons";
-import { Image, View, Text, TouchableOpacity } from "react-native";
+import React, { useState } from "react";
+import { View, Text } from "react-native";
+import { AntDesign } from "@expo/vector-icons";
+import Coin from "../../../../../assets/data/crypto.json";
+import colors from "../../../../config/colors";
 import styles from "./styles";
 
 const CoinDetailHeader = (props) => {
+  const [priceData, setpriceData] = useState(
+    `$ ${Coin.market_data.price_change_24h.toFixed(
+      2
+    )} (${Coin.market_data.price_change_percentage_24h.toFixed(2)}%)`
+  );
+
+  const caretName =
+    Coin.market_data.price_change_24h >= 0 ? "caretup" : "caretdown";
+
+  const priceButtonColor =
+    Coin.market_data.price_change_24h >= 0
+      ? colors.profitGreen
+      : colors.lossRed;
   return (
-    <View style={styles.navigation}>
-      <Ionicons name="chevron-back-sharp" size={30} color="white" />
-      <View style={styles.coinHeader}>
-        <Image source={{ uri: props.image }} style={styles.logo} />
-        <Text style={{ color: "white", fontSize: 16 }}>
-          {props.symbol.toUpperCase()}
+    <View style={styles.headerContainer}>
+      <Text style={styles.name}>{Coin.name}</Text>
+      <Text style={styles.currentPrice}>
+        $ {Coin.market_data.current_price.usd}
+      </Text>
+      <View style={styles.priceChangeDisplay}>
+        <AntDesign name={caretName} size={14} color={priceButtonColor} />
+        <Text style={[styles.priceChange, { color: priceButtonColor }]}>
+          {priceData}
         </Text>
       </View>
-      <Ionicons name="md-heart" size={30} color="white" />
     </View>
   );
 };

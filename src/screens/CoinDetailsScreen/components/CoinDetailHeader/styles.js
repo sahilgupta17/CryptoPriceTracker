@@ -1,19 +1,24 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-  navigation: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-  },
-  coinHeader: {
-    flexDirection: "row",
+  name: {
+    fontSize: 18,
     color: "white",
   },
-  logo: {
-    height: 20,
-    width: 20,
-    marginRight: 3,
+  currentPrice: {
+    fontSize: 28,
+    color: "white",
+  },
+  headerContainer: {
+    padding: 20,
+  },
+  priceChange: {
+    marginLeft: 5,
+    fontSize: 13,
+  },
+  priceChangeDisplay: {
+    flexDirection: "row",
+    alignItems: "center",
   },
 });
 
