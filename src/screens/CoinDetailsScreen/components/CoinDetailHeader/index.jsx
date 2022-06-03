@@ -15,10 +15,6 @@ const CoinDetailHeader = (props) => {
   const caretName =
     Coin.market_data.price_change_24h >= 0 ? "caretup" : "caretdown";
 
-  const priceButtonColor =
-    Coin.market_data.price_change_24h >= 0
-      ? colors.profitGreen
-      : colors.lossRed;
   return (
     <View style={styles.headerContainer}>
       <Text style={styles.name}>{Coin.name}</Text>
@@ -26,8 +22,8 @@ const CoinDetailHeader = (props) => {
         $ {Coin.market_data.current_price.usd}
       </Text>
       <View style={styles.priceChangeDisplay}>
-        <AntDesign name={caretName} size={14} color={priceButtonColor} />
-        <Text style={[styles.priceChange, { color: priceButtonColor }]}>
+        <AntDesign name={caretName} size={14} color={props.profitLossColor} />
+        <Text style={[styles.priceChange, { color: props.profitLossColor }]}>
           {priceData}
         </Text>
       </View>
