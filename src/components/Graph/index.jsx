@@ -5,7 +5,7 @@ import {
   ChartPath,
   ChartPathProvider,
 } from "@rainbow-me/animated-charts";
-import Coin from "../../../../../assets/data/crypto.json";
+// import Coin from "../../../assets/data/crypto.json";
 import styles from "./styles";
 
 const Graph = (props) => {

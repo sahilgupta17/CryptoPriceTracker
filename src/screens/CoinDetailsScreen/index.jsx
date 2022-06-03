@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity } from "react-native";
 import Coin from "../../../assets/data/crypto.json";
 import CoinDetailNavigation from "./components/CoinDetailNavigation";
 import CoinDetailHeader from "./components/CoinDetailHeader";
-import Graph from "./components/Graph";
+import Graph from "../../components/Graph";
 import styles from "./styles";
 import colors from "../../config/colors";
 
