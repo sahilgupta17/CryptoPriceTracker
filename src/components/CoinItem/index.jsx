@@ -3,7 +3,10 @@ import styles from "./styles";
 import theme from "../../config/themes";
 
 const CoinItem = (props) => {
+  // extracting coin object from props
   var coin = props.coin;
+
+  // function which returns market cap as a string with Unit in the end and fixed to 2 decimal places
   var marketCap = () => {
     if (coin.market_cap >= 1_000_000_000_000) {
       return `MCap ${(coin.market_cap / 1_000_000_000_000).toFixed(2)} T`;
@@ -17,8 +20,10 @@ const CoinItem = (props) => {
     return coin.market_cap;
   };
 
+  // value of priceButtonColor
   var priceButtonColor =
     coin.price_change_percentage_24h >= 0 ? theme.green : theme.red;
+
   // Price button width calculator:
   // Minimum button width is 90
   // If price contains character >= 9 including , . etc then it should be flexible
@@ -27,7 +32,7 @@ const CoinItem = (props) => {
   const onPriceButtonPress = () => {};
 
   return (
-    <View style={styles.container}>
+    <TouchableOpacity style={styles.container}>
       <View style={styles.leftColumn}>
         <Image
           source={{
@@ -40,20 +45,16 @@ const CoinItem = (props) => {
           <Text style={styles.marketCap}>{marketCap()}</Text>
         </View>
       </View>
-
-      <View>
-        {/* TODO have a button which displays the price of the coinItem */}
-        <TouchableOpacity
-          onPress={onPriceButtonPress}
-          style={[
-            styles.priceButton,
-            { backgroundColor: priceButtonColor, width: priceButtonWidth },
-          ]}
-        >
-          <Text style={styles.priceText}>{`${coin.current_price}`}</Text>
-        </TouchableOpacity>
-      </View>
-    </View>
+      <TouchableOpacity
+        onPress={onPriceButtonPress}
+        style={[
+          styles.priceButton,
+          { backgroundColor: priceButtonColor, width: priceButtonWidth },
+        ]}
+      >
+        <Text style={styles.priceText}>{`${coin.current_price}`}</Text>
+      </TouchableOpacity>
+    </TouchableOpacity>
   );
 };
 export default CoinItem;
