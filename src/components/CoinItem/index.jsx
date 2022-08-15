@@ -26,8 +26,16 @@ const CoinItem = (props) => {
 
   // Price button width calculator:
   // Minimum button width is 90
-  // If price contains character >= 9 including , . etc then it should be flexible
-  var priceButtonWidth = 0 > 2 ? 100 : 90;
+  // If price contains character >= 8 including , . etc then it should be flexible
+  var priceButtonWidth = () => {
+    // calculating length of number including digits, ., decimals
+    var digits = String(coin.current_price).length;
+    var minDigitsForVariableLength = 8;
+    var baseButtonWidth = 90;
+    digits = digits - minDigitsForVariableLength;
+    var buttonWidth = baseButtonWidth + Math.max(0, digits) * 5;
+    return buttonWidth;
+  };
 
   const onPriceButtonPress = () => {};
 
@@ -49,7 +57,7 @@ const CoinItem = (props) => {
         onPress={onPriceButtonPress}
         style={[
           styles.priceButton,
-          { backgroundColor: priceButtonColor, width: priceButtonWidth },
+          { backgroundColor: priceButtonColor, width: priceButtonWidth() },
         ]}
       >
         <Text style={styles.priceText}>{`${coin.current_price}`}</Text>
