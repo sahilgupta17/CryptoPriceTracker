@@ -1,7 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet } from "react-native";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
-
+import theme from "./src/config/themes";
 import { HomeScreen } from "./src/screens";
 
 export default function App() {
@@ -18,7 +18,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#121212",
-    paddingHorizontal: 5,
+    backgroundColor: "white",
+    backgroundColor: theme.primary,
   },
 });
