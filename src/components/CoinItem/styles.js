@@ -17,12 +17,12 @@ const styles = StyleSheet.create({
     marginRight: 10,
     alignSelf: "center",
   },
-  title: {
+  symbol: {
     color: theme.textPrimary,
     fontSize: 14,
     marginBottom: 5,
   },
-  ticker: {
+  marketCap: {
     color: theme.textSecondary,
     fontSize: 12,
   },
@@ -31,6 +31,7 @@ const styles = StyleSheet.create({
   },
   priceText: {
     color: "black",
+    alignSelf: "center",
   },
   priceButton: {
     borderRadius: 5,
