@@ -4,7 +4,18 @@ import theme from "../../config/themes";
 
 const CoinItem = (props) => {
   var coin = props.coin;
-  var marketCap;
+  var marketCap = () => {
+    if (coin.market_cap >= 1_000_000_000_000) {
+      return `MCap ${(coin.market_cap / 1_000_000_000_000).toFixed(2)} T`;
+    } else if (coin.market_cap >= 1_000_000_000) {
+      return `MCap ${(coin.market_cap / 1_000_000_000).toFixed(2)} B`;
+    } else if (coin.market_cap >= 1_000_000) {
+      return `MCap ${(coin.market_cap / 1_000_000).toFixed(2)} M`;
+    } else if (coin.market_cap >= 1_000) {
+      return `MCap ${(coin.market_cap / 1_000).toFixed(2)} K`;
+    }
+    return coin.market_cap;
+  };
 
   var priceButtonColor =
     coin.price_change_percentage_24h >= 0 ? theme.green : theme.red;
@@ -26,7 +37,7 @@ const CoinItem = (props) => {
         />
         <View>
           <Text style={styles.symbol}>{coin.symbol.toUpperCase()}</Text>
-          <Text style={styles.marketCap}>{`MCap ${coin.market_cap}`}</Text>
+          <Text style={styles.marketCap}>{marketCap()}</Text>
         </View>
       </View>
 
