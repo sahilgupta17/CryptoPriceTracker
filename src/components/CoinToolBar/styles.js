@@ -13,6 +13,7 @@ const styles = StyleSheet.create({
   },
   title: {
     color: "white",
+    fontSize: 15,
   },
   logo: {
     width: 25,
