@@ -5,6 +5,7 @@ const styles = StyleSheet.create({
   title: {
     color: theme.textPrimary,
     paddingHorizontal: 15,
+    paddingTop: 10,
     fontSize: 28,
   },
 });
