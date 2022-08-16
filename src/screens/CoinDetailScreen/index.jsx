@@ -1,9 +1,12 @@
 import { View, Text } from "react-native";
+import { CoinToolBar } from "../../components";
+
+import styles from "./styles";
 
 const CoinDetailScreen = () => {
   return (
-    <View>
-      <Text style={{ color: "white" }}>Coin Detail Screen</Text>
+    <View style={styles.container}>
+      <CoinToolBar />
     </View>
   );
 };
