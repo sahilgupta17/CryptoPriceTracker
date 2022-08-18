@@ -4,15 +4,16 @@ const styles = StyleSheet.create({
   container: {
     padding: 10,
   },
+  headerContainer: {},
   title: {
     color: "white",
-    fontSize: 16,
+    fontSize: 24,
   },
   currentPriceText: {
     color: "white",
     fontSize: 30,
   },
-  priceContainer: {
+  priceChangeContainer: {
     flexDirection: "row",
   },
   priceChangeText: {
