@@ -1,10 +1,10 @@
 import { View, Text } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 import styles from "./styles";
-import Coin from "../../assets/data/crypto.json";
-import theme from "../../config/themes";
+import Coin from "../../../../assets/data/crypto.json";
+import theme from "../../../../config/themes";
 
-const CoinDetailHeader = () => {
+const Header = () => {
   var priceColor, antDesignName;
   if (Coin.market_data.price_change_percentage_24hr >= 0) {
     priceColor = theme.green;
@@ -31,4 +31,4 @@ const CoinDetailHeader = () => {
     </View>
   );
 };
-export default CoinDetailHeader;
+export default Header;

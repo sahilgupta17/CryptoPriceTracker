@@ -1,10 +1,10 @@
 import { View, Text, Image } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { MaterialIcons } from "@expo/vector-icons";
-import theme from "../../config/themes";
+import theme from "../../../../config/themes";
 import styles from "./styles";
 
-const CoinToolBar = (props) => {
+const Toolbar = (props) => {
   const onFavButtonPressed = () => {
     //OnButton pressed
     // if the coin is not already in fav list then add the coin to favorite list and change color from theme.textPrimary to red
@@ -28,4 +28,4 @@ const CoinToolBar = (props) => {
   );
 };
 
-export default CoinToolBar;
+export default Toolbar;

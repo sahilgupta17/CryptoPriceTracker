@@ -1,13 +1,13 @@
 import { View, Text } from "react-native";
-import { CoinToolBar, CoinDetailHeader } from "../../components";
+import { Toolbar, Header } from "./components";
 import Coin from "../../assets/data/crypto.json";
 import styles from "./styles";
 
 const CoinDetailScreen = () => {
   return (
     <View style={styles.container}>
-      <CoinToolBar image={Coin.image.small} symbol={Coin.symbol} />
-      <CoinDetailHeader />
+      <Toolbar image={Coin.image.small} symbol={Coin.symbol} />
+      <Header />
     </View>
   );
 };
