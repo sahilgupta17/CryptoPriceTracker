@@ -1,5 +1,5 @@
 import { Text, View, Image, TouchableOpacity } from "react-native";
-import theme from "../../config/themes";
+import theme from "../../../../config/themes";
 import styles from "./styles";
 
 const CoinItem = (props) => {

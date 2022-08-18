@@ -9,8 +9,8 @@ export default function App() {
     <SafeAreaProvider>
       <SafeAreaView style={styles.container}>
         <StatusBar style="light" />
-        <HomeScreen />
-        {/* <CoinDetailScreen /> */}
+        {/* <HomeScreen /> */}
+        <CoinDetailScreen />
       </SafeAreaView>
     </SafeAreaProvider>
   );
