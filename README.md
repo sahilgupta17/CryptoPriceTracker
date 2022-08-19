@@ -27,6 +27,9 @@ It is a react native mobile app which shows latest price of crypto currencies fe
 
 ## Bugs and Issues
 
+1. Currency Converter: Using keyboard type as numeric for textInput doesn't provide a way for the user to stop from entering the numbers
+2. Graph for the crypto currency doesn't show the chart dot and for the sane reason doesn't update the chart Y Label when going through the graph
+
 ## Prospective Future Ideas
 
 ## Resources
