@@ -2,14 +2,15 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet } from "react-native";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import theme from "./src/config/themes";
-import { HomeScreen } from "./src/screens";
+import { HomeScreen, CoinDetailScreen } from "./src/screens";
 
 export default function App() {
   return (
     <SafeAreaProvider>
       <SafeAreaView style={styles.container}>
         <StatusBar style="light" />
-        <HomeScreen />
+        {/* <HomeScreen /> */}
+        <CoinDetailScreen />
       </SafeAreaView>
     </SafeAreaProvider>
   );
