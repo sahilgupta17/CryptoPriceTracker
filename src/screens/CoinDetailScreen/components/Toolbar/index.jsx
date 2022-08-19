@@ -1,6 +1,5 @@
 import { View, Text, Image } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
-import { MaterialIcons } from "@expo/vector-icons";
+import { Ionicons, FontAwesome } from "@expo/vector-icons";
 import theme from "../../../../config/themes";
 import styles from "./styles";
 
@@ -18,9 +17,9 @@ const Toolbar = (props) => {
         <Image source={{ uri: props.image }} style={styles.logo} />
         <Text style={styles.title}>{props.symbol.toUpperCase()}</Text>
       </View>
-      <MaterialIcons
-        name="favorite"
-        size={30}
+      <FontAwesome
+        name="star-o"
+        size={25}
         color={theme.textPrimary}
         onPress={onFavButtonPressed}
       />
